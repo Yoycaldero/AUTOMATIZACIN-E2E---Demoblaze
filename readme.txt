@@ -1,12 +1,24 @@
 INSTRUCCIONES DE EJECUCIÓN - PRUEBA E2E (DEMOBLAZE)
 
-1. Requisitos: Tener Node.js y Google Chrome instalado.
-npm init -y
-npm install selenium-webdriver
-npm install chomedriver
+Este proyecto utiliza Selenium WebDriver con JavaScript, siguiendo el patrón de diseño Page Object Model (POM) y Data-Driven Testing.
 
-2. Instalación: Abrir terminal en esta carpeta y ejecutar:
+INSTRUCCIONES DE EJECUCIÓN - PRUEBA E2E (DEMOBLAZE)
+
+1. REQUISITOS PREVIOS:
+   - Tener Node.js instalado (v18 o superior).
+   - Tener Google Chrome instalado.
+
+2. INSTALACIÓN:
+   Abrir una terminal en la carpeta 'E2E' y ejecutar:
    npm install
-3. Ejecución: Para correr la prueba de Selenium, ejecutar:
+
+   (Nota: Esto instalará selenium-webdriver y chromedriver automáticamente 
+   según el archivo package.json).
+
+3. EJECUCIÓN:
+   Para correr la prueba automatizada, ejecutar:
    node test/demoblaze.test.js
 
+4. NOTAS TÉCNICAS:
+   - El proyecto utiliza el patrón Page Object Model (POM).
+   - Los datos de prueba se gestionan de forma externa en /data/userData.json.
