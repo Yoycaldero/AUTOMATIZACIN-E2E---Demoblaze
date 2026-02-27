@@ -1,0 +1,12 @@
+Hallazgos y Conclusiones del Ejercicio E2E:
+
+Arquitectura: Se utilizó el patrón Page Object Model (POM) para separar la definición de elementos 
+de la lógica de negocio, facilitando el mantenimiento futuro.
+
+Manejo de Datos: Se implementó Data-Driven Testing mediante un archivo JSON externo (userData.json), 
+permitiendo cambiar los datos de prueba sin modificar el código fuente.
+
+Estabilidad: Se aplicaron esperas explícitas (until.elementIsVisible) para manejar la asincronía y 
+las animaciones de la página Demoblaze, evitando errores de interactividad.
+
+Desafíos: Se resolvió el manejo de alertas nativas del navegador tras agregar productos al carrito.
